@@ -1,0 +1,21 @@
+
+.FirstGame .cell{
+    width: 35px;
+    height: 35px;
+    border-radius: 0px;
+    background-color: white;
+}
+
+.FirstGame .trashCell{
+    width: 35px;
+    height: 35px;
+    border-radius: 0px;
+    background-color: white;
+    color: white;
+    border: none;
+}
+
+html, body, #root{
+    height: 100%;
+}
+
