@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/FirstGame.css';
 
 
-const FirstGame = (props) => {
+const FirstGameBoard = (props) => {
     
     const [checkCell, setCheckCell] = useState(Array.from({length: (props.boardInfo.playCellCnt*props.boardInfo.playCellCnt)}, () => false));
 
@@ -116,4 +116,4 @@ const FirstGame = (props) => {
     );
 };
 
-export default FirstGame;
+export default FirstGameBoard;

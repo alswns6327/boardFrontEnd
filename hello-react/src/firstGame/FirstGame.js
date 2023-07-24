@@ -1,9 +1,9 @@
-/* eslint-disable react-hooks/rules-of-hooks */
+
 import React, { useCallback, useRef, useState } from 'react';
 import FirstGameBoard from '../firstGame/FirstGameBoard';
 
 
-const firstGame = () => {
+const FirstGame = () => {
 
   const playCellCntInput = useRef(null);
   const [playCellCnt, setPlayCellCnt]= useState(5);
@@ -102,4 +102,4 @@ const firstGame = () => {
     );
 };
 
-export default firstGame;
+export default FirstGame;
