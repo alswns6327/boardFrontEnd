@@ -12,7 +12,7 @@ interface FetchData {
 
 const fetchAuth = async (fetchData: FetchData) => {
   const method = fetchData.method;
-  const url = fetchData.url;
+  const url = '/api'+fetchData.url;
   const data = fetchData.data;
   const header = fetchData.header;
   
