@@ -2,9 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/FirstGame.css';
 
 
-type Props = { children?: React.ReactNode }
-
-const FirstGameBoard:React.FC<Props> = (props) => {
+const FirstGameBoard = (props) => {
     
     const [checkCell, setCheckCell] = useState(Array.from({length: (props.boardInfo.playCellCnt*props.boardInfo.playCellCnt)}, () => false));
 
