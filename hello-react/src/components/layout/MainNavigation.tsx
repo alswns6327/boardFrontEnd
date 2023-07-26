@@ -39,12 +39,19 @@ const MainNavigation = () =>{
   return(
     <header>
       <Link to='/'><div >Home</div></Link>
+      <br/>
       <nav>
+        <div>로그인</div>
         <ul>
           <li>{!isLogin && <Link to='/login'>Login</Link>}</li>
           <li>{!isLogin && <Link to='signup'>Sign-Up</Link>}</li>
           <li>{isLogin && <Link to='/profile'>{nickname}</Link>}</li>
           <li>{isLogin && <button onClick={toggleLogoutHandler}>Logout</button>}</li>
+        </ul>
+        <div>1인용게임</div>
+        <ul>
+          <li><Link to="/firstGame">노노그램</Link></li>
+          <li><Link to="/secondGame">스도쿠</Link></li>
         </ul>
       </nav>
     </header>
